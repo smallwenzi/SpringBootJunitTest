@@ -2,3 +2,5 @@
 /SpringBootJunitTest.iml
 /HelloWorldSpringBoot/HelloWorldSpringBoot.iml
 /HelloWorldSpringBoot/target/
+/.settings/
+/.project
