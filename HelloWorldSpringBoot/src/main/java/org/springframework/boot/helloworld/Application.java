@@ -12,6 +12,12 @@ import org.springframework.context.annotation.Configuration;
 /**
  * spring boot 启动类
  * @author  xiaowen
+ *
+ *
+ *
+ *
+ * 继承extends SpringBootServletInitializer  覆写configure
+ * 可将将项目打包成war
  */
 public class Application extends SpringBootServletInitializer {
     @Override
@@ -21,5 +27,4 @@ public class Application extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
-
 }
