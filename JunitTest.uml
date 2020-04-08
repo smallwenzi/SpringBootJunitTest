@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.boot.junittest.AbstractBaseTest</OriginalElement>
+  <nodes>
+    <node x="914.0" y="261.0">org.springframework.boot.junittest.result.contenttype.impl.JsonResponseContentTypeImpl</node>
+    <node x="3131.0" y="0.0">org.springframework.test.context.web.WebAppConfiguration</node>
+    <node x="2088.0" y="261.0">org.springframework.boot.junittest.result.impl.HttpResponseResultImpl</node>
+    <node x="1595.5000000000002" y="125.0">org.springframework.boot.junittest.result.contenttype.IResponseContentType</node>
+    <node x="457.0" y="250.0">org.springframework.boot.junittest.result.responsebody.impl.AbstractResponseBody</node>
+    <node x="3332.0" y="12.0">org.springframework.boot.junittest.EnableJunitTestConfig</node>
+    <node x="0.0" y="375.0">org.springframework.boot.junittest.result.responsebody.impl.ResponseTextBodyImpl</node>
+    <node x="2873.0" y="0.0">org.junit.runner.RunWith</node>
+    <node x="866.75" y="125.0">org.springframework.boot.junittest.result.responsebody.IResponseBody</node>
+    <node x="2991.8583333333336" y="103.0">org.springframework.boot.junittest.AbstractBaseTest</node>
+    <node x="1501.0" y="261.0">org.springframework.boot.junittest.result.contenttype.impl.HtmlResponseContentTypeImpl</node>
+    <node x="2412.0" y="0.0">org.springframework.boot.junittest.result.IHttpResponseResult</node>
+    <node x="914.0" y="375.0">org.springframework.boot.junittest.result.responsebody.impl.ResponseModelViewImpl</node>
+    <node x="2232.75" y="114.0">org.springframework.boot.junittest.result.impl.AbstractHttpResponseResult</node>
+    <node x="457.0" y="375.0">org.springframework.boot.junittest.result.responsebody.impl.ResponseJsonBodympl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.boot.junittest.result.impl.AbstractHttpResponseResult" target="org.springframework.boot.junittest.result.IHttpResponseResult">
+      <point x="0.0" y="-37.5" />
+      <point x="-110.25" y="26.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.AbstractBaseTest" target="org.springframework.boot.junittest.EnableJunitTestConfig">
+      <point x="114.0" y="-48.5" />
+      <point x="3257.8583333333336" y="83.0" />
+      <point x="3429.5" y="83.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.result.responsebody.impl.ResponseJsonBodympl" target="org.springframework.boot.junittest.result.responsebody.impl.AbstractResponseBody">
+      <point x="0.0" y="-26.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.result.responsebody.impl.AbstractResponseBody" target="org.springframework.boot.junittest.result.responsebody.IResponseBody">
+      <point x="0.0" y="-37.5" />
+      <point x="675.5" y="230.0" />
+      <point x="929.75" y="230.0" />
+      <point x="-126.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.result.contenttype.impl.HtmlResponseContentTypeImpl" target="org.springframework.boot.junittest.result.responsebody.IResponseBody">
+      <point x="-188.99999999999977" y="-26.5" />
+      <point x="1595.5000000000002" y="220.0" />
+      <point x="1181.75" y="220.0" />
+      <point x="126.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.result.responsebody.impl.ResponseTextBodyImpl" target="org.springframework.boot.junittest.result.responsebody.impl.AbstractResponseBody">
+      <point x="0.0" y="-26.5" />
+      <point x="218.5" y="350.0" />
+      <point x="529.8333333333335" y="350.0" />
+      <point x="-145.66666666666663" y="37.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.result.contenttype.impl.JsonResponseContentTypeImpl" target="org.springframework.boot.junittest.result.responsebody.IResponseBody">
+      <point x="-141.75" y="-26.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.result.impl.HttpResponseResultImpl" target="org.springframework.boot.junittest.result.impl.AbstractHttpResponseResult">
+      <point x="144.75" y="-26.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.AbstractBaseTest" target="org.springframework.boot.junittest.result.IHttpResponseResult">
+      <point x="-114.0" y="-48.5" />
+      <point x="3029.8583333333336" y="83.0" />
+      <point x="2742.75" y="83.0" />
+      <point x="110.25" y="26.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.result.responsebody.impl.ResponseModelViewImpl" target="org.springframework.boot.junittest.result.responsebody.impl.AbstractResponseBody">
+      <point x="0.0" y="-26.5" />
+      <point x="1132.5" y="350.0" />
+      <point x="821.1666666666665" y="350.0" />
+      <point x="145.66666666666663" y="37.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.result.impl.HttpResponseResultImpl" target="org.springframework.boot.junittest.result.contenttype.IResponseContentType">
+      <point x="-144.75" y="-26.5" />
+      <point x="2232.75" y="230.0" />
+      <point x="2091.6250000000005" y="230.0" />
+      <point x="212.62500000000023" y="26.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.AbstractBaseTest" target="org.junit.runner.RunWith">
+      <point x="-38.0" y="-48.5" />
+      <point x="3105.8583333333336" y="73.0" />
+      <point x="2992.0" y="73.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.AbstractBaseTest" target="org.springframework.test.context.web.WebAppConfiguration">
+      <point x="38.0" y="-48.5" />
+      <point x="3181.8583333333336" y="83.0" />
+      <point x="3221.5" y="83.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.result.contenttype.impl.JsonResponseContentTypeImpl" target="org.springframework.boot.junittest.result.contenttype.IResponseContentType">
+      <point x="141.75" y="-26.5" />
+      <point x="1339.25" y="230.0" />
+      <point x="1666.3750000000002" y="230.0" />
+      <point x="-212.625" y="26.5" />
+    </edge>
+    <edge source="org.springframework.boot.junittest.result.contenttype.impl.HtmlResponseContentTypeImpl" target="org.springframework.boot.junittest.result.contenttype.IResponseContentType">
+      <point x="189.00000000000023" y="-26.5" />
+      <point x="1973.5000000000002" y="230.0" />
+      <point x="1949.8750000000002" y="230.0" />
+      <point x="70.875" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="1954.4999999999998" y="213.99999999999994" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
