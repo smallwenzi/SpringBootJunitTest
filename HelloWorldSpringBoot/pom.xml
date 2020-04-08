@@ -9,6 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <junitTest.version>1.0.1</junitTest.version>
+    </properties>
     <artifactId>HelloWorldSpringBoot</artifactId>
 
     <dependencies>
@@ -20,9 +23,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>JunitTest</artifactId>
+            <version>${junitTest.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <build>
         <resources>
@@ -32,7 +40,7 @@
 
 
             <resource>
-
+              <!--  Servlet 3.0 specification allows to have dynamic pages in src/main/resources/META-INF/resources/ -->
                 <directory>src/main/webapp</directory>
                 <targetPath>META-INF/resources</targetPath>
                 <includes>
