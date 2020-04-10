@@ -176,13 +176,13 @@ public class HelloWorldRestControllerTest extends BaseTest {
 >
 ## junit接口测试设计理念
 ### HTTP请求
-![http 请求](doc/images/http请求.png "http 请求")
+![http 请求](doc/images/httpRequest.png "http 请求")
 
 ### 接口分类
-![接口分类](doc/images/接口分类.png "接口分类")
+![接口分类](doc/images/interface.png "接口分类")
 
-### 返回结果
-![返回结果](doc/images/返回结果.png "返回结果")
+### 返回类型
+![返回类型](doc/images/contentType.png "返回类型")
 
 ### 类图
 ![类图](doc/images/JunitTest.png "类图")
