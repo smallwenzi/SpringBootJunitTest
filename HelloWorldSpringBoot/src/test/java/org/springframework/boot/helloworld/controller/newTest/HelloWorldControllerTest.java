@@ -22,8 +22,11 @@ public class HelloWorldControllerTest extends BaseTest {
     @Test
     public void testHelloWorld() throws Exception {
         Map<String, Object> resultMatchersMap = new HashMap<String, Object>();
+        // 检查 页面是否 helloWorld
         resultMatchersMap.put(SystemConstant.VIEW_NAME, "helloWorld");
+        // 检查Model对象属性value 值是否是helloWorld
         resultMatchersMap.put("value", "helloWorld");
+        // 请求地址
         this.postUrl("/view/helloWorld", resultMatchersMap);
     }
 }
