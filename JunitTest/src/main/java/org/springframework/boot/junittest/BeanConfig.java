@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Bean;
 
 /**
  * Bean Config 类
- *
+ * 
  * @Author xiaowen
  */
 public class BeanConfig {

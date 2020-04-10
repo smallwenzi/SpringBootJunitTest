@@ -35,8 +35,8 @@ IDEA直接运行 org.springframework.boot.helloworld.Application
 ```
 //Application.class 换成你的项目SpringBoot启动类
 @SpringBootTest(classes = Application.class)
-// 继承AbstractBaseTest
-public class BaseTest extends AbstractBaseTest {}
+// 继承 org.springframework.boot.junittest.AbstractBaseJunit
+public class BaseTest extends AbstractBaseJunit {}
 ```
 * 4 例如测试 接口地址返回view 页面<br/>
 > 源接口地址代码：
@@ -163,7 +163,17 @@ public class HelloWorldRestControllerTest extends BaseTest {
 ```
 
 ## 生成Junit报告
-
+```
+ mvn surefire-report:report命令
+```
+ > 在surefire-reports目录下生成2个xml文件，两个txt文件
+  ：(细心的你应该发现了xml文件名称中可以看到测试类的名称；
+  并且只有测试类junitTest，TryTest被执行了。TestCase2没有被执行)
+      在site目录下生成一个html文件。
+![site test](doc/images/siteTest.png "siteTest.png")
+> 打开surefire-report.html文件：
+![site test](doc/images/testReport.jpg "siteTest.png")
+>
 ## junit接口测试设计理念
 ### HTTP请求
 ![http 请求](doc/images/http请求.png "http 请求")
@@ -176,3 +186,6 @@ public class HelloWorldRestControllerTest extends BaseTest {
 
 ### 类图
 ![类图](doc/images/JunitTest.png "类图")
+
+
+## 若有疑问 及时留言

@@ -26,9 +26,9 @@ import org.springframework.web.context.WebApplicationContext;
 /**
  * 
  * 当http接口返回状态码200 1 接口返回json数据校验 @See org.springframework.boot.junittest.result.responsebody.impl.ResponseJsonBodympl;
- * 2 返回view 页面（ application/json;charset=UTF-8） 和返回model的值 @See
+ * 2 返回view 页面（ test/html;charset=UTF-8） 和返回model的值 @See
  * org.springframework.boot.junittest.result.responsebody.impl.ResponseModelViewImpl
- *
+ * 
  * 当http接口返回状态码
  * 
  * 抽象BaseTest 其他项目继承此类 需要指定 @SpringBootTest(classes = Application.class)//这里的Application是springboot的启动类名 后调用
@@ -38,7 +38,7 @@ import org.springframework.web.context.WebApplicationContext;
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
 @EnableJunitTestConfig
-public abstract class AbstractBaseTest {
+public abstract class AbstractBaseJunit {
 
     protected Logger log = LoggerFactory.getLogger(getClass());
 

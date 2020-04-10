@@ -27,8 +27,9 @@ public class HtmlResponseContentTypeImpl implements IResponseContentType {
         IResponseBody responseBodyObject = null;
         // 判断responseBody 是否是json字符串 ，true转为json校验
         if (JsonUtil.isJson(responseBody)) {
-            IResponseContentType responseContentType = SpringApplicationContextUtil
-                .getBean(BeanNameConstant.JSONCONTENTTYPE_BEANNAME, IResponseContentType.class);
+            IResponseContentType responseContentType =
+                SpringApplicationContextUtil.getBean(BeanNameConstant.JSONCONTENTTYPE_BEANNAME,
+                    IResponseContentType.class);
             if (responseContentType != null) {
                 return responseContentType.processResponseResult(resultMatchersMaps, responseBody, resultActions);
             }

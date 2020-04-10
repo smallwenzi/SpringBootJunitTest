@@ -19,13 +19,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
- *
- * HelloWorld  Testcontroller
- *
+ * 
+ * HelloWorld Testcontroller
+ * 
  * @Author xiaowen
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class)//这里的Application是springboot的启动类名
+@SpringBootTest(classes = Application.class)
+// 这里的Application是springboot的启动类名
 @WebAppConfiguration
 public class HelloWorldControllerTest {
 
@@ -45,8 +46,7 @@ public class HelloWorldControllerTest {
         ResultActions resultActions = mockMvc.perform(post("/view/helloWorld").characterEncoding(ENCODING));
         resultActions.andDo(print());
         resultActions.andExpect(status().isOk());
-        resultActions.andExpect( MockMvcResultMatchers.view().name("helloWorld"));
-        resultActions.andExpect( MockMvcResultMatchers.model().attribute("value", "helloWorld"));
+        resultActions.andExpect(MockMvcResultMatchers.view().name("helloWorld"));
+        resultActions.andExpect(MockMvcResultMatchers.model().attribute("value", "helloWorld"));
     }
 }
-

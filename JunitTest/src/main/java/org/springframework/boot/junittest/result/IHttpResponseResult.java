@@ -5,9 +5,9 @@ import java.util.Map;
 import org.springframework.test.web.servlet.ResultActions;
 
 /**
- *
+ * 
  * 处理回复结果接口类 其他项目继承此类 需要指定 @SpringBootTest(classes = Application.class)//这里的Application是springboot的启动类名
- *
+ * 
  * @Author xiaowen
  */
 public interface IHttpResponseResult {

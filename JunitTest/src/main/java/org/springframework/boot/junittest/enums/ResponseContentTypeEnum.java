@@ -9,7 +9,17 @@ import org.springframework.boot.junittest.constant.ResponseContentType;
  * @Author xiaowen
  */
 public enum ResponseContentTypeEnum {
+    /**
+     * 
+     * 
+     * 返回view 页面（ text/html;charset=UTF-8） 和返回model的值 @See * // *
+     * org.springframework.boot.junittest.result.responsebody.impl.ResponseModelViewImpl
+     */
     HTML(BeanNameConstant.HTMLCONTENTTYPE_BEANNAME, ResponseContentType.TEXT_HTML.toString()),
+    /**
+     * 当http接口返回状态码200 1 接口返回json数据校验 * @See
+     * org.springframework.boot.junittest.result.responsebody.impl.ResponseJsonBodympl;
+     */
     JSON(BeanNameConstant.JSONCONTENTTYPE_BEANNAME, ResponseContentType.APPLICATION_JSON.toString());
 
     private String contentType;

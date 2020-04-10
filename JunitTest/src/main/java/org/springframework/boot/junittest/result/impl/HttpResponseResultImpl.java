@@ -37,8 +37,8 @@ public class HttpResponseResultImpl extends AbstractHttpResponseResult {
         // 查找返回类型对象
         IResponseContentType responseContentType =
             SpringApplicationContextUtil.getBean(responseContentTypeBeanName, IResponseContentType.class);
-        Assert.notNull(responseContentType,
-            "[Assertion failed] - responseContentTypeBeanName=" + responseContentTypeBeanName + " not exist");
+        Assert.notNull(responseContentType, "[Assertion failed] - responseContentTypeBeanName="
+            + responseContentTypeBeanName + " not exist");
 
         // 构造ResultMatcher 对象集合列表
         List<ResultMatcher> resultMatcherList =

@@ -1,4 +1,4 @@
-package org.springframework.boot.helloworld.controller.newTest;
+package org.springframework.boot.helloworld.controller.newtest;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,16 +6,16 @@ import java.util.Map;
 import org.junit.Test;
 
 /**
- *
+ * 
  * HelloWorld Restful Testcontroller
- *
+ * 
  * @Author xiaowen
  */
 
-public class HelloWorldRestControllerTest extends BaseTest {
+public class HelloWorldRestControllerTest extends BaseJunit {
     /**
      * url地址返回json例子
-     *
+     * 
      * @See org.springframework.boot.helloworld.controller.HelloWorldController.helloWorld
      * @throws Exception
      */

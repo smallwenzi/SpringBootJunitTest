@@ -37,7 +37,7 @@
                 <artifactId>maven-java-formatter-plugin</artifactId>
                 <version>0.4</version>
                 <configuration>
-                    <configFile>${project.basedir}/code-style.xml</configFile>
+                    <configFile>${project.basedir}/eclipse-codestyle.xml</configFile>
                 </configuration>
                 <executions>
                     <execution>
@@ -60,7 +60,7 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <skip>true</skip>
+                    <skip>false</skip>
                 </configuration>
             </plugin>
             <plugin>
@@ -103,18 +103,6 @@
                 <configuration>
                     <aggregate>true</aggregate>
                 </configuration>
-            </plugin>
-            <!-- spring boot -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

@@ -8,9 +8,9 @@ import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 /**
- *
+ * 
  * 处理 接口返回json数据校验 构造ResultMatcher 对象集合列表 暂时仅支持json 第一层
- *
+ * 
  * @Author xiaowen
  */
 public class ResponseJsonBodympl extends AbstractResponseBody {

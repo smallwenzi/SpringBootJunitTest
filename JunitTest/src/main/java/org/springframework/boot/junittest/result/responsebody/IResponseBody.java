@@ -7,7 +7,7 @@ import org.springframework.test.web.servlet.ResultMatcher;
 
 /**
  * 接口返回不同内容 处理结果不一样 可能有json，modelView,String等等
- *
+ * 
  * @Author xiaowen
  */
 public interface IResponseBody {

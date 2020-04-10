@@ -13,7 +13,7 @@ import org.springframework.util.Assert;
 
 /**
  * 处理接口返回类型是Content type =application/json
- *
+ * 
  * @Author xiaowen
  */
 public class JsonResponseContentTypeImpl implements IResponseContentType {

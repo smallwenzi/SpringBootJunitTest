@@ -5,7 +5,7 @@ import java.lang.annotation.*;
 import org.springframework.context.annotation.Import;
 
 /**
- *
+ * 
  * 开启EnableJunitTestConfig
  * 
  * @Author xiaowen

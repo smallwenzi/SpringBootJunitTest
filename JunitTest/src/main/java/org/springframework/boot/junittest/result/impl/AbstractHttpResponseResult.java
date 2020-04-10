@@ -9,7 +9,7 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultActions;
 
 /**
- *
+ * 
  * 处理回复结果抽象类 子类必须覆写processHttpStatusOK
  * 
  * @Author xiaowen

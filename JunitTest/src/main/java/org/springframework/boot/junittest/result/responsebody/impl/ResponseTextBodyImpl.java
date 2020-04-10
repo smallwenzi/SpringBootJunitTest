@@ -7,6 +7,11 @@ import java.util.Map;
 import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+/**
+ * 字符串
+ * 
+ * @Author xiaowen
+ */
 public class ResponseTextBodyImpl extends AbstractResponseBody {
 
     @Override
