@@ -4,3 +4,5 @@
 /HelloWorldSpringBoot/target/
 /.settings/
 /.project
+/JunitTest/JunitTest.iml
+/JunitTest/target
